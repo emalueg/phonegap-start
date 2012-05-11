@@ -54,6 +54,7 @@ run(function () {
         display('#welcome');
     });
     when('#test', function () {
+    	alert("Test Function hit");
         store.get('config', function (saved) {
             // construct a gmap str
             var map = saved ? saved.map || ui('map') : ui('map')
@@ -72,5 +73,5 @@ run(function () {
             });
         });
     });  
-    when('#goback');
+    when('#goback', function(){alert("go back");});
 });
