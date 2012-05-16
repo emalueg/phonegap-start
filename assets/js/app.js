@@ -56,7 +56,7 @@ run(function () {
     when('#test'){
     	// Just so i know we got here
 	alert('test method');	
-	
+/*	
 	// Attempt a JSON web service call to an external domain...
 	$.getJSON( 'http://ws.geonames.org/searchJSON?q=London&maxRows=10&callback=getLocation', function(jData) { 
 		  if (jData == null) {
@@ -74,6 +74,7 @@ run(function () {
 		  }
 		  alert(theResults);
 	});	
+*/	
     }; 
     when('#goback', function(){alert("go back");});
 });
