@@ -53,5 +53,5 @@ run(function () {
         });
         display('#welcome');
     });
-    when('#test', function(){alert("Testing");});
+    when('#test');
 });
