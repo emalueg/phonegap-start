@@ -53,6 +53,8 @@ run(function () {
         });
         display('#welcome');
     });
-    when('#test'); 
+    when('#test'){
+	alert('test method');	
+    }; 
     when('#goback', function(){alert("go back");});
 });
