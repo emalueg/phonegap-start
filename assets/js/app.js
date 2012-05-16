@@ -54,4 +54,5 @@ run(function () {
         display('#welcome');
     });
     when('#goback', function(){alert("go back");});
+    when('#test', function(){alert("go back");});
 });
