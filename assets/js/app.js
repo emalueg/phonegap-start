@@ -53,7 +53,7 @@ run(function () {
         });
         display('#welcome');
     });
-    when('#save', function () {
+    when('#goback', function () {
         alert("go back");
         display('#welcome');
     });
