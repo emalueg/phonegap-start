@@ -53,6 +53,9 @@ run(function () {
         });
         display('#welcome');
     });
+    when('#save', function () {
+        alert("go back");
+        display('#welcome');
+    });
     when('#test');
-    when('#goback', function () {alert("go back"); display('#welcome'); });
 });
