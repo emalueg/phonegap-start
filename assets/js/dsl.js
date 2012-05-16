@@ -14,7 +14,6 @@ var run = function(application) {
 
 // shows id passed
 , display = function(id) {
-	alert("display " + id);
     x$(["#welcome", "#map", "#settings", "#test"]).each(function(e, i) {
         var display = '#' + x$(e)[0].id === id ? 'block' : 'none';
         x$(e).css({ 'display':display })
@@ -23,7 +22,6 @@ var run = function(application) {
 
 // reg a click to [id]_button, displays id (if it exists) and executes callback (if it exists)
 , when = function(id, callback) {
-		alert("when " + id);
     x$(id + '_button').on('touchstart', function () {
         if (x$(id).length > 0)
             display(id);
