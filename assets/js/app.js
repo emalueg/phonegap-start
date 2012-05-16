@@ -54,7 +54,26 @@ run(function () {
         display('#welcome');
     });
     when('#test'){
+    	// Just so i know we got here
 	alert('test method');	
+	
+	// Attempt a JSON web service call to an external domain...
+	$.getJSON( 'http://ws.geonames.org/searchJSON?q=London&maxRows=10&callback=getLocation', function(jData) { 
+		  if (jData == null) {
+		    // There was a problem parsing search results
+		    alert('no data');
+		  }
+		
+		  var theResults = '';
+		  var geonames = jData.geonames;
+		  for (i=0;i< geonames.length;i++) {
+		     var name = geonames[i];
+		     // we create a simple html list with the geonames objects
+		     // the link will call the center() javascript method with lat/lng as parameter
+		     theResults = theResults + 'Lat:' + name.lat +', Lon:' + name.lng + ', Name:' + name.name + '.';
+		  }
+		  alert(theResults);
+	});	
     }; 
     when('#goback', function(){alert("go back");});
 });
