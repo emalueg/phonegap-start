@@ -55,7 +55,8 @@ run(function () {
     });
     when('#goback', function () {
         alert("go back");
-        display('#welcome');
+        //display('#welcome');
     });
-    when('#test');
+    when('#test', function () {
+        alert("test"););
 });
