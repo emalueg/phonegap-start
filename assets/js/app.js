@@ -57,7 +57,7 @@ run(function () {
         display('#welcome');
     });
     when('#test', function () {
-        alert("test");
+        alert("ajax test");
 	$.ajax({
 		url: 'http://ws.geonames.org/searchJSON?q=London&maxRows=10&callback=getLocation',
 		dataType: 'jsonp',
@@ -71,7 +71,8 @@ run(function () {
 			//error loading data
 			alert('Error Loading Data');
 		}
-	});	       
+	});
+	alert("ajax test over");
         
     });
 });
