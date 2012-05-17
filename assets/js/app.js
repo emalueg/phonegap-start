@@ -58,5 +58,5 @@ run(function () {
         //display('#welcome');
     });
     when('#test', function () {
-        alert("test"););
+        alert("test");});
 });
