@@ -76,3 +76,20 @@ run(function () {
         
     });
 });
+
+function jsoncallback(data)
+{
+	alert('callback called');
+	if(data == null){
+		alert('Callback with null data');
+		//$.mobile.changePage("#error","slide",false,true);
+		return;
+	}
+	
+	if(data.success){
+		alert('callback with correct data');
+		//$("#resultlist").html(data.resultsList);
+		//$.mobile.changePage("#results","slide",false,true);
+		//$("#resultlist").listview('refresh');
+	}
+}
