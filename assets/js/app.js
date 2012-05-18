@@ -59,8 +59,9 @@ run(function () {
     when('#test', function () {
         alert("ajax test");
         
+//	url: 'http://ws.geonames.org/searchJSON?q=London&maxRows=10&callback=getLocation',
 	$.ajax({
-		url: 'http://ws.geonames.org/searchJSON?q=London&maxRows=10&callback=getLocation',
+		url: 'http://ws.geonames.org/searchJSON?q=London&maxRows=10',
 		dataType: 'jsonp',
 		jsonp: 'callback',
 		jsonpCallback: 'callbackFunction',
@@ -77,7 +78,7 @@ run(function () {
 	alert("ajax test middle");
 
 	$.ajax({
-		url: 'http://ws.geonames.org/searchJSON?q=London&maxRows=10&callback=getLocation',
+		url: 'http://ws.geonames.org/searchJSON?q=London&maxRows=10',
 		dataType: 'jsonp',
 		jsonp: 'jsoncallback',
 		jsonpCallback: 'callbackFunction',
