@@ -60,6 +60,7 @@ run(function () {
         alert("ajax test");
         
 //	url: 'http://ws.geonames.org/searchJSON?q=London&maxRows=10&callback=getLocation',
+/*
 	$.ajax({
 		url: 'http://ws.geonames.org/searchJSON?q=London&maxRows=10',
 		dataType: 'jsonp',
@@ -76,7 +77,7 @@ run(function () {
 	});   
 
 	alert("ajax test middle");
-
+*/
 	$.ajax({
 		url: 'http://ws.geonames.org/searchJSON?q=London&maxRows=10',
 		dataType: 'jsonp',
