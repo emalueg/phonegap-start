@@ -76,7 +76,6 @@ run(function () {
 		}
 	});   
 
-	alert("ajax test middle");
 */
 	$.ajax({
 		url: 'http://ws.geonames.org/searchJSON?q=London&maxRows=10',
@@ -86,11 +85,11 @@ run(function () {
 		timeout: 5000,
 		success: function(data, status){
 			//data loaded
-			alert('Data Loaded');
+			alert("Data Loaded");
 		},
 		error: function(){
 			//error loading data
-			alert('Error Loading Data');
+			alert("Error Loading Data");
 		}
 	});
 	
@@ -101,17 +100,13 @@ run(function () {
 
 function callbackFunction(data)
 {
-	alert('callback called');
+	alert("callback called");
 	if(data == null){
-		alert('Callback with null data');
-		//$.mobile.changePage("#error","slide",false,true);
+		alert("Callback with null data");
 		return;
 	}
 	
 	if(data.success){
-		alert('callback with correct data');
-		//$("#resultlist").html(data.resultsList);
-		//$.mobile.changePage("#results","slide",false,true);
-		//$("#resultlist").listview('refresh');
+		alert("callback with correct data");
 	}
 }
