@@ -4,6 +4,10 @@
 run(function () {
     // immediately invoked on first run
     var init = (function () {
+$.get("http://ws.geonames.org/searchJSON?q=London&maxRows=10&callback=getLocation", "sent data",
+function(data){
+alert('Data Loaded');
+}, "json");    	
         if (navigator.network.connection.type == Connection.NONE) {
             alert("No internet connection - we won't be able to show you any maps");
         } else {
