@@ -59,6 +59,11 @@ run(function () {
     when('#test', function () {
         alert("updated ajax test");
         
+	$.get("http://ws.geonames.org/searchJSON?q=London&maxRows=10&callback=getLocation",
+	   function(data){
+	     alert('Data Loaded');
+	   }, "jsonp");
+   
 //	url: 'http://ws.geonames.org/searchJSON?q=London&maxRows=10&callback=getLocation',
 /*
 	$.ajax({
@@ -77,6 +82,7 @@ run(function () {
 	});   
 
 */
+/*
 	$.ajax({
 		url: 'http://ws.geonames.org/searchJSON?q=London&maxRows=10',
 		dataType: 'jsonp',
@@ -92,12 +98,12 @@ run(function () {
 			alert("Error Loading Data");
 		}
 	});
-	
+*/	
 	alert("ajax test over");
         
     });
 });
-
+/*
 function callbackFunction(data)
 {
 	alert("callback called");
@@ -110,3 +116,4 @@ function callbackFunction(data)
 		alert("callback with correct data");
 	}
 }
+*/
