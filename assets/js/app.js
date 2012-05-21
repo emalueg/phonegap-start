@@ -57,12 +57,14 @@ run(function () {
         display('#welcome');
     });
     when('#test', function () {
+    	// If we really do a get, we should first update a section with a 'loading' graphic,
+    	// then make the call, then update with results
         alert("updated ajax test");
         
 	$.get("http://ws.geonames.org/searchJSON?q=London&maxRows=10&callback=getLocation",
 	   function(data){
 	     alert('Data Loaded');
-	   }, "jsonp");
+	   }, "json");
    
 //	url: 'http://ws.geonames.org/searchJSON?q=London&maxRows=10&callback=getLocation',
 /*
