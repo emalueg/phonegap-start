@@ -10,10 +10,6 @@ run(function () {
             alert("We can reach Google - get ready for some awesome maps!");
         }
     })();
-    
-   $("#test_button").click(function() {
-     alert("Hello world!");
-   });
 
     // a little inline controller
     when('#welcome');
