@@ -62,11 +62,22 @@ run(function () {
         alert("updated ajax call");
         alert("second to test");
         
+	$.ajax({ 	
+		url: 'https://www.google.com', 
+		data: {}, 
+		success: function() { 
+			alert('success'); 
+		}, 
+		error: function() { 
+			alert('error') 
+		} 	
+	}) 
+/*        
 	$.get("http://ws.geonames.org/searchJSON?q=London&maxRows=10&callback=getLocation", "sent data",
 	   function(data){
 	     alert('Data Loaded');
 	   }, "json");
-	
+*/	
 	alert("test over");
 	
 //	url: 'http://ws.geonames.org/searchJSON?q=London&maxRows=10&callback=getLocation',
