@@ -11,6 +11,10 @@ run(function () {
         }
     })();
     
+   $("#test_button").click(function() {
+     alert("Hello world!");
+   });
+
     // a little inline controller
     when('#welcome');
     when('#settings', function() {
